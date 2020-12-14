@@ -4,11 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
-/* apply styles to <header> */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -63,7 +62,6 @@ header h1 {
 .steps h3 {
   color: #024e76;
   font-size: 46px;
-  margin-top: 10px;
   flex: 1 30%;
 }
 .step-text h4 {
@@ -158,6 +156,7 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 footer {
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   background: #fce138;
@@ -165,7 +164,6 @@ footer {
   padding: 40px 35px;
 }
 footer h2 {
-  display: flex;
   color: #024e76;
   font-size: 30px;
   margin: 0;
@@ -203,6 +201,7 @@ section {
   color: #fce138;
 }
 /* Hero Style End */
+
 /* Hero Form Style Start*/
 .hero-form {
   border: 3px solid #024e76;
@@ -226,7 +225,7 @@ section {
   padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
-  width: 40%;
+  width: 100%;
   margin-bottom: 3.5%;
 }
 .hero-form label {
@@ -242,41 +241,82 @@ section {
 /* Hero Form Style End*/
 
 /* Reach Out Style Start*/
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-info > *{
+  flex: 1;
+  margin: 15px;
+}
 .contact {
-  text-align: center;
   background: #024e76;
 }
 .section-title {
   font-size: 55px;
-  border-bottom: 3px solid color=teal;
+  border-bottom: 3px solid;
   color: #024e76;
+  text-align:center;
+  margin: 0 auto 35px  auto;
+  widows: 50%;
+  padding-bottom: 20px;
+}
+.contact-form input{
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.contact-form textarea{
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.contact-form button{
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
 }
 .contact h2 {
   color: #fce138;
 }
-.contact-info iframe {
-  width: 400px;
+.contact-info iframe {  
   height: 400px;
 }
-.contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
+.contact-info div {  
   color: white;
 }
 .contact-info h3 {
   color: #fce138;
   font-size: 32px;
 }
-
-.contact-info p,
-.contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 20px;
-  font-style: normal;
+.contact-info p, .contact-info address {
+  font-size: 16px;
+}
+.contact-form, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  
 }
 
 .contact-info a {
